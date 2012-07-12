@@ -1,0 +1,32 @@
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en" xmlns:lift="http://liftweb.net/">
+<head>
+    <title>Stuff for later</title>
+    <link href='http://fonts.googleapis.com/css?family=Slackey' rel='stylesheet' type='text/css'/>
+    <link href='http://fonts.googleapis.com/css?family=Patua+One' rel='stylesheet' type='text/css'/>
+
+    <link rel="stylesheet" href="/static/css/style.css" type="text/css" media="screen" />
+</head>
+
+<body>
+
+<div class="wrapper">
+    <lift:embed what="/partials/_menu" />
+
+    <h1>The Thing where you put your Stuff</h1>
+
+    <div class="left">
+      <div class="lift:CategoriesSnippet.list">
+        <ul>
+          <li class="category"><a href="/menu">menu item</a></li>
+        </ul>
+        <lift:embed what="/partials/_add_category_form"/>
+      </div>
+    </div>
+
+    <div class="main">
+      <lift:bind name="content" />
+    </div>
+
+</div>
+</body>
+</html>
